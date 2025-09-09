@@ -44,9 +44,11 @@ export function Navigation() {
 
           {/* SOS Button & Mobile Menu */}
           <div className="flex items-center space-x-4">
-            <Button variant="destructive" size="sm" className="flex items-center space-x-2">
-              <Phone className="w-4 h-4" />
-              <span className="hidden sm:inline">SOS Help</span>
+            <Button asChild variant="destructive" size="sm" className="flex items-center space-x-2">
+              <Link href="/emergency">
+                <Phone className="w-4 h-4" />
+                <span className="hidden sm:inline">SOS Help</span>
+              </Link>
             </Button>
 
             {/* Mobile Menu */}
